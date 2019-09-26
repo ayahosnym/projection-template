@@ -1,0 +1,107 @@
+ *, *::before, *::after {
+ 	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+ }
+
+ html, body {
+ 	margin: 0;
+ 	padding: 0;
+ 	overflow-x: hidden;
+ }
+/*START general class */
+.border-bottom {
+	border-bottom: 1px solid #ffffff;
+	position: relative;
+	z-index: 4;
+	width: 100%;
+	opacity: .5;
+}
+
+.btn-success {
+	border-radius: 20rem;
+	border: 3px solid #40b97d;
+}
+/*END general class */
+
+ .btn-success:hover, .btn-success-footer:hover {
+ 	background-color: #6c8d6c9d;
+ }
+
+ .main-text-color {
+ 	color: #40b97d;
+ }
+
+ .main-bg-color {
+ 	background-color: #40b97d;
+ }
+
+ .main-border-color {
+ 	border: 1px solid #40b97d;
+ }
+
+ /*--------START-header----------*/
+
+ header {
+ 	position: relative;
+ 	min-height: 100vh;
+ 	width: 100%;
+ 	background: url('../images/banner.jpg') no-repeat center;
+ 	background-size: cover;
+ 	z-index: 0;
+ }
+
+ header::before {
+ 	content: '';
+ 	min-height: 100%;
+ 	width: 100%;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	background-color: #3a3a3abe;
+ 	z-index: -1;
+ }
+
+ header div.row {
+ 	margin-top: 5rem;
+ }
+
+ header div.row>div:nth-child(1) h1 {
+ 	font-size: 1.7em;
+ 	margin-bottom: 5rem;
+ }
+
+ i {
+ 	font-size: 1.8em;
+ }
+
+ .border-left, .border-right {
+ 	border-left: 1px solid #8f8f8f;
+ }
+
+ @media screen and (max-width:768px) {
+ 	.border-left, .border-right {
+ 		border: none;
+ 	}
+ }
+ 
+ /*--------END-header----------*/
+ 
+ /* --------start footer-------- */
+
+ .btn-success-footer {
+	border-radius: 20rem;
+ 	border: 2px solid white !important;
+	 color: white;
+	 font-size: 12px;
+}
+ .btn-success-footer:hover {
+	background-color: #7EC89E;
+	transition: .5s ease-in-out;
+}
+
+form input, textarea, select {
+	border: 1px solid #e0dbdb !important;
+	background-color: transparent !important;
+}
+
